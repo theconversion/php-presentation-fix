@@ -1,3 +1,18 @@
+## How to install this fix? 
+
+#### Composer
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/dmtrbskkv/PHPPresentationFix"
+    }
+  ]
+}
+```
+
+
 # ![PHPPresentation](https://raw.githubusercontent.com/mvargasmoran/PHPPresentation/develop/docs/images/PHPPresentationLogo.png "PHPPresentation")
 
 [![Latest Stable Version](https://poser.pugx.org/phpoffice/phppresentation/v/stable.png)](https://packagist.org/packages/phpoffice/phppresentation)
