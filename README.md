@@ -1,6 +1,6 @@
 ## How to install this fix? 
 
-#### Composer
+add it to composer.json:
 ```json
 {
 
@@ -13,6 +13,7 @@
 }
 ```
 
+then run this or change lib version on `dev-fix-pptx`
 ``` shell
 composer require phpoffice/phppresentation dev-fix-pptx
 ```
