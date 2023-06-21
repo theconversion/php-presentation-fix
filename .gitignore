@@ -21,3 +21,7 @@ vendor
 /samples/Github_*.*
 /samples/results
 /composer.lock
+
+### IDE
+.idea
+.code
