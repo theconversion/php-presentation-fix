@@ -3,13 +3,18 @@
 #### Composer
 ```json
 {
+
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/dmtrbskkv/PHPPresentationFix"
+      "url": "https://github.com/dmtrbskkv/php-presentation-fix"
     }
   ]
 }
+```
+
+``` shell
+composer require phpoffice/phppresentation dev-fix-pptx
 ```
 
 
