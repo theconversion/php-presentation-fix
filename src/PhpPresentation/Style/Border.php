@@ -102,9 +102,9 @@ class Border implements ComparableInterface
      *
      * @return self
      */
-    public function setLineWidth(int $pValue = 1): self
+    public function setLineWidth($pValue = 1): self
     {
-        $this->lineWidth = $pValue;
+        $this->lineWidth = (int) $pValue;
 
         return $this;
     }
