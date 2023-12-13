@@ -364,7 +364,7 @@ class Paragraph implements ComparableInterface
      *
      * @return self
      */
-    public function setSpacingBefore(int $spacingBefore): self
+    public function setSpacingBefore($spacingBefore): self
     {
         $this->spacingBefore = $spacingBefore;
 
