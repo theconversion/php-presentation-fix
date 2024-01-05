@@ -203,9 +203,9 @@ class Font implements ComparableInterface
     /**
      * Set Size.
      */
-    public function setSize(int $pValue = 10): self
+    public function setSize($pValue = 10): self
     {
-        $this->size = $pValue;
+        $this->size = (int) $pValue;
 
         return $this;
     }
