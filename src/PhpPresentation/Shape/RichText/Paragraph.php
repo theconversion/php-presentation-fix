@@ -293,9 +293,9 @@ class Paragraph implements ComparableInterface
      *
      * @return $this
      */
-    public function setHashIndex(int $value)
+    public function setHashIndex($value)
     {
-        $this->hashIndex = $value;
+        $this->hashIndex = (int) $value;
 
         return $this;
     }
@@ -388,9 +388,9 @@ class Paragraph implements ComparableInterface
      *
      * @return self
      */
-    public function setSpacingAfter(int $spacingAfter): self
+    public function setSpacingAfter($spacingAfter): self
     {
-        $this->spacingAfter = $spacingAfter;
+        $this->spacingAfter = (int) $spacingAfter;
 
         return $this;
     }
