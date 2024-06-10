@@ -688,7 +688,7 @@ class PowerPoint2007 implements ReaderInterface
         }
     }
 
-    protected function loadSlideBackground(XMLReader $xmlReader, DOMElement $oElement, AbstractSlide $oSlide): void
+    protected function loadSlideBackground(XMLReader $xmlReader, DOMElement $oElement, $oSlide): void
     {
         // Background color
         $oElementColor = $xmlReader->getElement('p:bgPr/a:solidFill/a:srgbClr', $oElement);
@@ -757,7 +757,7 @@ class PowerPoint2007 implements ReaderInterface
         }
     }
 
-    protected function loadShapeDrawing(XMLReader $document, DOMElement $node, AbstractSlide $oSlide): void
+    protected function loadShapeDrawing(XMLReader $document, DOMElement $node, $oSlide): void
     {
         // Core
         $document->registerNamespace('asvg', 'http://schemas.microsoft.com/office/drawing/2016/SVG/main');
@@ -875,7 +875,10 @@ class PowerPoint2007 implements ReaderInterface
             $oSubElement = $document->getElement('a:outerShdw/a:srgbClr/a:alpha', $oElement);
             if ($oSubElement instanceof DOMElement) {
                 if ($oSubElement->hasAttribute('val')) {
-                    $oShape->getShadow()->setAlpha((int) $oSubElement->getAttribute('val') / 1000);
+                    $thisalpha = $oSubElement->getAttribute('val') / 1000;
+
+                    $oShape->getShadow()->setAlpha((int) $thisalpha);
+
                 }
             }
         }
